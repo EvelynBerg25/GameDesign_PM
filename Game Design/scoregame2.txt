@@ -1,0 +1,9 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>INSTRUCTIONS<<<<<<<<<<<<<<<<<<<<<<<<
+<    LEVEL ONE- GUESS THE NUMBER BETWEEN 1-25 IN 5 TRIES.   >
+<    LEVEL TWO- GUESS THE NUMBER BETWEEN 1-50 IN 7 TRIES.   >
+<  LEVEL THREE- GUESS THE NUMBER BETWEEN 1-100 IN 10 TRIES. >
+<                   *three hints per level*                 >
+<><><><><><><><><><><><><><><><><><><><><><><><><><><><><><><
+
+
+random.randint(1, 25)

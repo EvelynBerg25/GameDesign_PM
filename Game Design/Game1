@@ -1,0 +1,54 @@
+#Evelyn Berg
+#ABOUT
+
+#ASSIGNMENT
+#ype your pseudocode at the top of your code as a comment
+#Give ibstructions to the user what is he game about (print statements, make it pretty)
+#Make a list of at least 10 words
+#Randomly select a word
+#ask the user to guess the word (give a hint about what kind of words you are using: fruits, animals,etc)
+#If they guess right congratulate them if mot say sorry "you missed"
+#CHALLENGE: run the program until the user does not want to paly any more
+
+#PSEUDOCODE
+
+
+import colorsys
+import os
+os.system('cls')
+
+for i in range(43):
+    print("-", end = "")
+print()
+
+print(":                 title                   :")
+print(":                  int                    :")
+print(":                  int                    :")
+
+
+for i in range(43):
+    print("-", end = "")
+print()
+
+List1= ["1,2,3"]
+List2= ["1,2,3"]
+List3= ["1,2,3"]
+print()
+
+while True:
+    choice= input("what game would you like to play? Options: 1,2, or 3")
+    try:
+        choice=int(choice)
+        if choice > 0 and choice < 4:
+                break
+        else:
+            print("give me 1,2,3")
+    except:
+        print("please enter a number")
+
+
+if choice ==1:
+    while Game == True:
+        print("HINT: 123") #this is my hint
+
+        element = random.choice(colors)

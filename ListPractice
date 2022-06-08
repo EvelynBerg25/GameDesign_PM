@@ -1,0 +1,13 @@
+#Evelyn Berg
+#we will be learning lists and functions and methods
+#deleting elements and 4 types of loops and random
+
+import os
+os.system('cls')
+ # a list is an array (group)
+ #lots of things look lile lists, but arent changeable or sizeable
+
+ myList=[1,2,3,4,5]
+ print(myList)
+ myList.append(myFruit)
+ 
