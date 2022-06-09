@@ -14,8 +14,9 @@ import os
 os.system('cls')
 
 name= input("WHAT IS YOUR NAME? ")
+instr= open("scoregame2.txt",'r').read()
 
-instr= input(""">>>>>>>>>>>>>>>>>>>>   GUESS THE NUMBER   <<<<<<<<<<<<<<<<<<<
+menu= input(""">>>>>>>>>>>>>>>>>>>>   GUESS THE NUMBER   <<<<<<<<<<<<<<<<<<<
 <  <      <    TYPE A NUMBER AND PRESS ENTER     >      >   >
 <  <      <         INSTRUCTIONS - PRESS 1       >      >   >
 <  <      <           LEVEL ONE - PRESS 2        >      >   >
@@ -24,7 +25,9 @@ instr= input(""">>>>>>>>>>>>>>>>>>>>   GUESS THE NUMBER   <<<<<<<<<<<<<<<<<<<
 <  <      <            TO EXIT - PRESS 5         >      >   >
 <><><><><><><><><><><>>>>>>>>>><<<<<<<<<<><><><><><><><><><><""")
 
-if instr== 1:
+
+
+if menu== 1:
     print("1")
 
 #lev1=

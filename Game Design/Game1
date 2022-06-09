@@ -15,42 +15,77 @@
 
 import colorsys
 import os
+import random #making it so i can randomize the list
 os.system('cls')
 
+for i in range(43): #making dashes on top/botom of title
+    print("-", end = "")
+print()
+
+print(":             Guess the Word              :")
+print(":         there are 3 categories;         :")
+print(":           choose ONE randomly!          :")
+
+
 for i in range(43):
     print("-", end = "")
 print()
 
-print(":                 title                   :")
-print(":                  int                    :")
-print(":                  int                    :")
 
-
-for i in range(43):
-    print("-", end = "")
-print()
-
-print("Hello")
-
-List1= ["1,2,3"]
-List2= ["1,2,3"]
-List3= ["1,2,3"]
+List1= ['circle','square','triange','hexagon','octagon','parallelagram','rectangle','trapazoid','diamond','rhombus']
+List2= ['red','orange','yellow','green','blue','purple','indigo','violet','black','brown','white','pink']
+List3= ['dog','cat','mouse','fish','bird','horse','sheep','deer','hamster','pig']
 print()
 
 while True:
-    choice= input("what game would you like to play? Options: 1,2, or 3")
+    choice= input("what game would you like to play? Options: 1,2, or 3 or enter 4 to exit") #challenge accepted
     try:
         choice=int(choice)
-        if choice > 0 and choice < 4:
+        if choice > 0 and choice < 5: #so that i can specify
+            if choice ==1:
+                while True: #game=
+                    print("HINT: it would be SQUARE if you didn't guess it!") #this is my hint
+
+                    answer = random.choice(List1) #selecting answer from list1
+                    print(answer)
+
+                    guess1 = input("enter your guess: ")
+                    if guess1 == answer:
+                        print("you're correct!")
+                        break #restart game here
+                    else:
+                        print("sorry, try again!") #if you get it wrong you can try again
+            if choice ==2:      #this basically repeats the same thing, but for list2
+                while True: #game=
+                    print("HINT: I bet ROY G. BIV would get this one!") #this is my hint
+
+                    answer = random.choice(List2)
+                    
+                    guess1 = input("enter your guess: ")
+                    if guess1 == answer:
+                        print("you're correct!")
+                        break #restart game here
+                    else:
+                        print("sorry, try again!")
+
+            if choice ==3:
+                while True: #game=
+                    print("HINT: only an ANIMAL would get this wrong!") #this is my hint
+
+                    answer = random.choice(List3)
+                    
+                    guess1 = input("enter your guess: ")
+                    if guess1 == answer:
+                        print("you're correct!")
+                        break #restart game here
+                    else:
+                        print("sorry, try again!")
+            
+            if choice ==4: #challenge accepted, send user back to top
                 break
         else:
             print("give me 1,2,3")
     except:
-        print("please enter a number")
+        print("please enter a number") 
 
 
-if choice ==1:
-    while Game == True:
-        print("HINT: 123") #this is my hint
-
-        element = random.choice(colors)
