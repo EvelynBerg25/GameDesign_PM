@@ -17,9 +17,9 @@ sce=344 #want to make string line to put into my fine (score is a number, letter
 scrLine=str(sce)+"/t"+date.strftime("%m-%d-%y")+ "/t" 
 
 #creating a file (must know the name of the file, call file something easy)
-myFile = open("abc.txt") # must let it know what youre opening the file for
-myFile.read(scrLine)
-myFile.close()
+#myFile = open("abc.txt") # must let it know what youre opening the file for
+#myFile.read(intLine)
+#myFile.close()
 #create new line ( as soon as you opne with write, deletes everything in file that was there before)
 # use append to create keepable record
 
