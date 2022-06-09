@@ -5,12 +5,16 @@
 from ctypes.wintypes import WORD
 import random
 import os 
+import os, datetime
+
 
 os.system ('cls')
 from time import sleep
 seconds=.5
 
 theWord=""
+
+date=datetime.datetime.now()
 
 list1 = ["coral","scallop","sea urchin","oyster","mussel","cockle","clam","geoduck","abelone","ostrea"]
 list2 = ["apple","kiwi",'Banana']
@@ -91,6 +95,7 @@ while Game:
     while check and cnt <5:
         guess=input("plese put your guess here: ")
         print()
+        print(theWord)        
         if guess == theWord:
             print("Congrats, You got it")
             check=False
@@ -103,7 +108,16 @@ while Game:
     if score > high:   # find highest sce
         high=score
     print(name+", your score is "+str(score))
+
+    scrLine= str(score)+"\t "+name + "\t"+date.strftime("%m-%d-%Y")+"\n"
+    myFile= open("Game Design/HighScorePractice",'a')
+    myFile.write(scrLine)
+    myFile.close()
     input("Press enter ")
+    scoreboard= open("Game Design/HighScorePractice",'r')
+    scoreboard.read(scrLine)
+    scoreboard.close()
+    
     os.system('cls')
     print("<><><><><><><><><><><><>")
     answer=input("Do yo want to play again? ")

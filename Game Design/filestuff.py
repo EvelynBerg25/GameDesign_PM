@@ -24,7 +24,7 @@ scrLine=str(sce)+"/t"+date.strftime("%m-%d-%y")+ "/t"
 # use append to create keepable record
 
 #create a file
-myFile=open("abc", 'r')
+myFile=open("abc.txt", 'r')
 myFile.read(scrLine)
 myFile.close()
 
