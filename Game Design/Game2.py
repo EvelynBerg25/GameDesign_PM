@@ -14,7 +14,7 @@ import os
 os.system('cls')
 
 name= input("WHAT IS YOUR NAME? ")
-instr= open("scoregame2.txt",'r').read()
+instr= open("Game Design/scoregame2.txt",'r')
 
 menu= input(""">>>>>>>>>>>>>>>>>>>>   GUESS THE NUMBER   <<<<<<<<<<<<<<<<<<<
 <  <      <    TYPE A NUMBER AND PRESS ENTER     >      >   >
@@ -30,15 +30,33 @@ menu= input(""">>>>>>>>>>>>>>>>>>>>   GUESS THE NUMBER   <<<<<<<<<<<<<<<<<<<
 if menu== 1:
     print("1")
 
+while True:
+    choice= menu
+    choice=int(choice)
+    if choice > 0 and choice < 6: #so that i can specify
+        if choice ==1:
+            myFile = instr
+            content = myFile.readlines()
+            print(content)
+            myFile.close()
+        
+        if choice ==2:
+            answer= random.randint(1,25)
+
+            guess1 = input("enter your guess: ")
+            if guess1 == answer:
+                print("you're correct!")
+                break #restart game here
+            else:
+                print("sorry, try again!") #if you get it wrong you can try again
+                
+
 #lev1=
 #lev2=
 #lev3=
 #exit=
 
+#answer = random.randint(1, 25)
 
-
-#myFile = open("Game Design/scoregame2.txt", 'r')
-#content = myFile.readlines()
-#print(content)
-#myFile.close()
+#answer= random.randint(1,25)
 
