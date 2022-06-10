@@ -31,7 +31,7 @@ for i in range(43):
     print("-", end = "")
 print()
 
-
+#lists to choose from
 List1= ['circle','square','triange','hexagon','octagon','parallelagram','rectangle','trapazoid','diamond','rhombus']
 List2= ['red','orange','yellow','green','blue','purple','indigo','violet','black','brown','white','pink']
 List3= ['dog','cat','mouse','fish','bird','horse','sheep','deer','hamster','pig']

@@ -40,13 +40,16 @@ while True:
     choice=int(choice)
     if choice > 0 and choice < 6: #so that i can specify
         if choice ==1:
+            os.system('cls')
             myFile = instr
             content = myFile.readlines() #operation on closed file error?
             print(content)
             myFile.close()
+        else:
+            print("please enter a number!")
         
         if choice ==2:
-            answer= random.randint(1,25)
+            answer= random.randint(1,25) #trying to find how to guess correctly
             print(answer)
             guess = input("enter your guess: ")
             if guess == answer:
@@ -61,11 +64,9 @@ while True:
             #break 
         if choice ==3:
             answer= random.randint(1,50)
-            print(answer)
             guess = input("enter your guess: ")
             if guess == answer:
                 print("you're correct!")
-                break 
             else:
                 print("sorry, try again!")
             cnt+=1  

@@ -5,22 +5,20 @@ import os
 os.system('cls')
 
 print("hello")
-print('are you under 18 or over 65?')
-answer= input('enter "y" if yes')
+print('are you under 18 or over 65?') #to make sure the calculation is correct and applicable to user
+answer= input('y','Y')
 if answer:
     print("*this calculation is non-applicable*")
-else: 
-    print("ok! perfect")
 
 weight= int(input("please enter your weight in kilograms: "))
-height= ((int(input("please enter your height in meters: ")))**2)
+height= ((int(input("please enter your height in meters: ")))**2) #adding bmi calculation to initial height variable
 
-BMI= round( height/weight )
+BMI= round( height/weight ) #telling user BMI, before results
 print('your BMI is-')
 print(BMI)
 
 if BMI<25 and BMI>18:
-    print("you are healthy!")
+    print("you are healthy!") #informing user of results
 
 if BMI>25:
     print("you are overweight :(")

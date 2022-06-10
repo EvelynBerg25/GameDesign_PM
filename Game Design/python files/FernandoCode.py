@@ -109,9 +109,9 @@ while Game:
         high=score
     print(name+", your score is "+str(score))
 
-    scrLine= str(score)+"\t "+name + "\t"+date.strftime("%m-%d-%Y")+"\n"
+    scrLine= str(score)+"\t "+name + "\t"+date.strftime("%m-%d-%Y")+"\n" #trying to insert score file
     myFile= open("Game Design/HighScorePractice",'a')
-    myFile.write(scrLine)
+    myFile.write(scrLine) #got an error here?
     myFile.close()
     input("Press enter ")
     scoreboard= open("Game Design/HighScorePractice",'r')
